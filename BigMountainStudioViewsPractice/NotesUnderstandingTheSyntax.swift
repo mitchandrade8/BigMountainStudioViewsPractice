@@ -24,4 +24,30 @@ struct BasicSyntax: View {
 
 // MARK: - Property Getters
 
+struct Person {
+    // Computed read-only property (no setter, value is not stored)
+    var personType: String {
+        get {
+            return "human"
+        }
+    }
+}
 
+// Change 1 - remove the return
+struct Person1 {
+    var personType: String {
+        get {
+            "human"
+        }
+    }
+}
+
+// Change 2 - Remove the get
+var personType: String {
+    "human"
+}
+
+// Property Notes:
+/// Properties can have a getter and setter. But when a property has no setter, it's called a "read-only" property. And when the property
+/// does not store a value, it is called a "computed" property. This is because the value is computed or generated every time the property is read.
+/// 
