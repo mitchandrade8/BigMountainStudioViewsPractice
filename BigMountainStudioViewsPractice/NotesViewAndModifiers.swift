@@ -40,4 +40,9 @@ import Foundation
 
 /// Child view are views inside the parent view
 /// Apple refers to child views that have no children of their own as "leaf views"
-/// 
+
+
+// MARK: - Relationship -- And Modifiers
+
+/// Some modifiers can be set on the parent view and it will be applied to all the children views in the container -BMS
+/// The parent view can override the font size and use a different one to style the UI
